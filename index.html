@@ -4,14 +4,19 @@
 <body>
 
 	<h1>This is a heading</h1>
-	<h3>My Form</h3>
+	<h3>My Calculator</h3>
 
-	<form>
-		  First name:<br>
-		  <input type="text" name="firstname"><br>
-		  Last name:<br>
-		  <input type="text" name="lastname">
-    </form>
+	<form action="/action_page.php"
+	  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+	  0
+	  <input type="range"  id="a" name="a" value="50">
+	  100 +
+	  <input type="number" id="b" name="b" value="50">
+	  =
+	  <output name="x" for="a b"></output>
+	  <br><br>
+	  <input type="submit">
+   </form>
 
 </body>
 </html>
